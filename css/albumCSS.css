@@ -3,7 +3,7 @@ body, html{
   font-size: .9em;
 }
 
-.met1a{
+.albumDiv{
   width: 250px;
   height: 250px;
   overflow: hidden;
@@ -13,7 +13,7 @@ body, html{
 
 }
 
-.met1a article{
+.albumDiv article{
     position: relative;
     margin: 0px;
     background-color: rgba(255, 255, 255, 0.7);
@@ -22,7 +22,7 @@ body, html{
     box-sizing: border-box;
     animation: bounceDown 1s forwards;
 }
-.met1a:hover article{
+.albumDiv:hover article{
   animation: bounceUp 1.2s forwards;
 }
 
