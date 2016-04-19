@@ -20,12 +20,33 @@ body, html{
     height: 253px;
     padding:2em;
     box-sizing: border-box;
+    animation: bounceDown 1s forwards;
 }
 .met1a:hover article{
-  margin-top: -253px;
-  transition: margin-top 0.8s;
+  animation: bounceUp 1.2s forwards;
 }
 
+@keyframes bounceDown{
+  0% {margin-top: -253px;}
+  25%{margin-top: 0px;}
+  38%{margin-top: -233px;}
+  50%{margin-top: 0px;}
+  63%{margin-top: -150px;}
+  75%{margin-top: 0px;}
+  88%{margin-top: -83px;}
+  100%{margin-top: 0px;}
+}
+
+@keyframes bounceUp{
+  0% {margin-top: 0px;}
+  25%{margin-top: -253px;}
+  38%{margin-top: -89px;}
+  50%{margin-top: -253px;}
+  63%{margin-top: -150px;}
+  75%{margin-top: -253px;}
+  88%{margin-top: -233px;}
+  100%{margin-top: -253px;}
+}
 footer{
 clear:left;
 text-align: left;
